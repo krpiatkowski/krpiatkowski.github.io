@@ -11,7 +11,7 @@ git add --force --all dist/
 
 git status
 
-git commit --allow-empty -m "Updating gh-pages with latest code built on $(date)"
+git commit --allow-empty -m "Updating master with latest code built on $(date)"
 
 git push origin `git subtree split --prefix dist master`:refs/heads/master --force
 
