@@ -1,0 +1,47 @@
+@import "constants";
+
+html {
+  font-family: "Roboto Slab", serif;
+  background-color: $color4;
+  font-size: $fontsize;
+}
+
+body {
+  margin: 2em;
+}
+
+h1 {
+  font-size: 3 * $fontsize;
+  margin: 0em;
+  color: $color1;
+}
+
+h2 {
+  font-size: 2 * $fontsize;
+  margin: 0em;
+  color: $color2;
+}
+
+h3 {
+  font-size: 1.5 * $fontsize;
+  margin: 1em 0em;
+  width: 100%;
+  border-bottom: 3px solid $color3;
+  padding: 1em 0em;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  display: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  margin: 0em;
+}
