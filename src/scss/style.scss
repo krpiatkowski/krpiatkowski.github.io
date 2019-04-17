@@ -1,0 +1,86 @@
+@import "colors";
+
+$fontsize: 12pt;
+
+html {
+  font-family: "Roboto Slab", serif;
+  background-color: $color4;
+  font-size: $fontsize;
+}
+
+body {
+  margin: 2em;
+}
+
+h1 {
+  font-size: 3 * $fontsize;
+  margin: 0em;
+  color: $color1;
+}
+
+h2 {
+  font-size: 2 * $fontsize;
+  margin: 0em;
+  color: $color2;
+}
+
+a,
+a:hover,
+a:focus,
+a:active {
+  display: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  margin: 0em;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 2em;
+
+  img {
+    clip-path: circle(50% at 50% 50%);
+    width: 100%;
+    height: 100%;
+    max-width: 20em;
+    max-height: 20em;
+  }
+
+  #title {
+    margin: 0em 1em;
+    flex: 1;
+    white-space: nowrap;
+  }
+  ul {
+    color: $color1;
+
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    white-space: nowrap;
+
+    li {
+      display: flex;
+      margin: 0.2em 0em;
+    }
+
+    .icon-container {
+      display: flex;
+      width: 2em;
+      margin-left: 0.5em;
+    }
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
