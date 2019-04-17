@@ -8,67 +8,12 @@
     <link href="main.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
-      <img src="images/self-thumb.png" />
-      <div id="title">
-        <h1>Krzysztof Piatkowski</h1>
-        <h2>Software developer</h2>
-      </div>
-      <div id="info">
-        <ul>
-          <li>
-            kr.piatkowski@gmail.com
-            <div class="icon-container">
-              <i class="icon ion-md-mail"></i>
-            </div>
-          </li>
-          <li>
-            +45 50 76 11 33
-            <div class="icon-container">
-              <i class="icon ion-md-call"></i>
-            </div>
-          </li>
-          <li>
-            <a
-              href="https://www.google.com/maps/place/Esbjerg/@55.5224398,8.3233972,11z/data=!3m1!4b1!4m5!3m4!1s0x464b20a619e30ce9:0xdde847ab4e4ae9d1!8m2!3d55.476466!4d8.459405"
-              target="_blank"
-            >
-              Esbjerg, Denmark
-              <div class="icon-container">
-                <i class="icon ion-md-pin"></i>
-              </div>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/krzysztof-piatkowski-5b6b9b31/" target="_blank">
-              Linkedin
-              <div class="icon-container">
-                <i class="icon ion-logo-linkedin"></i>
-              </div>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </header>
+    <%= require('html-loader!./header.html') %>
     <main>
       <div>
         Software developer with more then 10 years of experience.
       </div>
-      <div>
-        <h3>SKILLS</h3>
-        <div>
-          <h4>MOBILE</h4>
-        </div>
-        <div>
-          <h4>WEB</h4>
-        </div>
-        <div>
-          <h4>BACKEND</h4>
-        </div>
-        <div>
-          <h4>OTHER</h4>
-        </div>
-      </div>
+      <%= require('html-loader!./skills.html') %>
     </main>
     <footer></footer>
   </body>
