@@ -3,7 +3,7 @@ set -e
 
 git checkout master || git checkout -b master
 
-git merge master --no-ff --strategy-option theirs --no-edit --allow-unrelated-histories
+git merge development --no-ff --strategy-option theirs --no-edit --allow-unrelated-histories
 
 npm run build
 
