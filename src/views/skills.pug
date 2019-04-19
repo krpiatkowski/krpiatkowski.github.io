@@ -1,0 +1,45 @@
+mixin bar(name, progress)
+  .progress-bar
+    .progress-bar__title= name
+    .progress-bar__progress
+      div(class=`progress-bar__progress__${progress}`).inViewPort
+
+.page
+  h3 SKILLS
+  #skills
+    .skill-category
+      h4 MOBILE
+      +bar('iOS', 100)
+      +bar('Android', 75)
+      +bar('Xamarin', 50)
+
+    .skill-category
+      h4 WEB
+      +bar('React', 100)   
+      +bar('CSS', 75)
+      +bar('Angular', 25)
+
+    .skill-category
+      h4 BACKEND
+      +bar('Node.js', 100)
+      +bar('Spring', 75)
+      +bar('Java EE', 75)
+      +bar('Rails', 50)
+
+    .skill-category
+      h4 LANGUAGES
+      +bar('JS', 100)
+      +bar('Java', 100)
+      +bar('Swift', 75)
+      +bar('Obj-C', 100)
+      +bar('Ruby', 50)
+
+    .skill-category
+      h4 CLOUD
+      +bar('Azure', 75)
+      +bar('AWS', 50)  
+
+    .skill-category
+      h4 OTHER
+      +bar('Agile', 100)
+      +bar('PM', 50)

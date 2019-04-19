@@ -13,6 +13,12 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.pug$/,
+        use: {
+          loader: "pug-loader"
+        }
+      },
+      {
         test: /\.m?js$/,
         exclude: /(node_modules|bower_components)/,
         use: {
@@ -66,7 +72,7 @@ module.exports = {
       filename: "[name].css"
     }),
     new HtmlWebpackPlugin({
-      template: "src/index.html"
+      template: "./src/views/index.pug"
     })
   ],
   resolve: {

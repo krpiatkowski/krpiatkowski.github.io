@@ -7,7 +7,7 @@ html {
 }
 
 body {
-  margin: 2em;
+  scroll-snap-type: y mandatory;
 }
 
 h1 {
@@ -44,4 +44,10 @@ a:hover {
 
 ul {
   margin: 0em;
+}
+
+.page {
+  height: 100vh;
+  scroll-snap-align: start;
+  padding: 2em 2em 2em 2em;
 }

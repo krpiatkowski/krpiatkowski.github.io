@@ -2,40 +2,48 @@
 
 header {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   margin-bottom: 2em;
 
-  img {
-    clip-path: circle(50% at 50% 50%);
-    width: 100%;
-    height: 100%;
-    max-width: 20em;
-    max-height: 20em;
-  }
-
-  #title {
-    margin: 0em 1em;
-    flex: 1;
-    white-space: nowrap;
-  }
-  ul {
-    color: $color1;
-
-    list-style-type: none;
+  .info {
     display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    white-space: nowrap;
-
-    li {
-      display: flex;
-      margin: 0.2em 0em;
+    flex-wrap: wrap;
+    img {
+      clip-path: circle(50% at 50% 50%);
+      width: 100%;
+      height: 100%;
+      max-width: 20em;
+      max-height: 20em;
     }
 
-    .icon-container {
-      display: flex;
-      width: 2em;
-      margin-left: 0.5em;
+    #title {
+      margin: 0em 1em;
+      flex: 1;
+      white-space: nowrap;
     }
+    ul {
+      color: $color1;
+
+      list-style-type: none;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      white-space: nowrap;
+
+      li {
+        display: flex;
+        margin: 0.2em 0em;
+      }
+
+      .icon-container {
+        display: flex;
+        width: 2em;
+        margin-left: 0.5em;
+      }
+    }
+  }
+
+  .intro {
+    margin-top: 3em;
   }
 }

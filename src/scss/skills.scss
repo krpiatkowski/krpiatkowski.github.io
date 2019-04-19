@@ -2,8 +2,16 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .skill-category {
-  width: 45%;
+  width: 27%;
+  min-width: 20em;
+  flex-wrap: wrap;
+
+  .progress-bar {
+    margin-top: 1em;
+    min-width: 10em;
+  }
 }

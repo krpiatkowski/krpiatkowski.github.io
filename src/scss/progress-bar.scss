@@ -1,10 +1,16 @@
 @import "constants";
 
-%progress {
-  background-color: $color3;
-  height: 100%;
-  z-index: 200;
+@for $i from 1 through 4 {
+  @keyframes animation_#{$i * 25} {
+    from {
+      width: 0%;
+    }
+    to {
+      width: percentage(($i * 25)/100);
+    }
+  }
 }
+
 .progress-bar {
   width: 100%;
   display: flex;
@@ -15,26 +21,20 @@
     z-index: 100;
     overflow: hidden;
 
-    &__25 {
-      @extend %progress;
-      width: 25%;
-    }
-
-    &__50 {
-      @extend %progress;
-      width: 50%;
-    }
-    &__75 {
-      @extend %progress;
-      width: 75%;
-    }
-    &__100 {
-      @extend %progress;
-      width: 100%;
+    @for $i from 1 through 4 {
+      &__#{$i * 25}.animate {
+        background-color: $color3;
+        animation-name: animation_#{$i * 25};
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
+        animation-timing-function: ease-out;
+        height: 100%;
+        z-index: 200;
+      }
     }
   }
 
   &__title {
-    width: 4em;
+    width: 5em;
   }
 }
