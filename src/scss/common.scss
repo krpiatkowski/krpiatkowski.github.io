@@ -6,12 +6,8 @@ html {
   font-size: $fontsize;
 }
 
-body {
-  scroll-snap-type: y mandatory;
-}
-
 h1 {
-  font-size: 3 * $fontsize;
+  font-size: 2.5 * $fontsize;
   margin: 0em;
   color: $color1;
 }
@@ -47,7 +43,10 @@ ul {
 }
 
 .page {
-  height: 100vh;
-  scroll-snap-align: start;
   padding: 2em 2em 2em 2em;
+  height: 100vh;
+}
+
+.icon {
+  color: $color2;
 }
