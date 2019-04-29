@@ -26,6 +26,13 @@ h3 {
   padding: 1em 0em;
 }
 
+h4 {
+  display: inline-block;
+  font-size: $fontsize;
+  border-bottom: 2px solid $color3;
+  margin-bottom: 0.5em;
+}
+
 a,
 a:hover,
 a:focus,

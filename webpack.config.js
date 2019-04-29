@@ -2,6 +2,9 @@ const path = require("path");
 
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CleanWebpackPlugin = require("clean-webpack-plugin");
+const webpack = require("webpack");
+const LiveReloadPlugin = require('webpack-livereload-plugin')
 
 module.exports = {
   entry: "./src/index.js",
@@ -68,15 +71,24 @@ module.exports = {
     ]
   },
   plugins: [
+    new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
       filename: "[name].css"
     }),
     new HtmlWebpackPlugin({
-      template: "./src/views/index.pug"
-    })
+      template: "./src/views/index.pug",
+      filename: "./index.html"
+    }),
+    new webpack.HotModuleReplacementPlugin(),
+
   ],
   resolve: {
     extensions: [".js"]
   },
-  devtool: "inline-source-map"
+  devtool: "inline-source-map",
+  devServer: {
+    contentBase: path.resolve(__dirname, "dist"),
+    watchContentBase: true,
+    inline: true
+  }
 };
