@@ -48,6 +48,7 @@
     "animate.css": "^3.7.0",
     "ionicons": "^4.5.6",
     "normalize.css": "^8.0.1",
+    "pageable": "^0.6.8",
     "typeface-roboto-slab": "0.0.72"
   }
 }

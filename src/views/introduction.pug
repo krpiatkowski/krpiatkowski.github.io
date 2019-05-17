@@ -1,14 +1,14 @@
-.introduction.page
-  .top
-    img(src=require("../images/self-thumb.png"))
-
-    .brief
-      h1 Krzysztof Piatkowski
+.div(data-anchor="page-1")
+  #introduction.page
+    img(src=require('../images/self-thumb.png'))
+    #headline
+      h1.animated.bounceOutLeft Krzysztof Piatkowski
       h2 Software developer
       | Software developer with more then 10 years of experience.
-    ul
+
+    ul#contacts
       li
-        a(href="mailto:kr.piatkowski@gmail.com")
+        a(href='mailto:kr.piatkowski@gmail.com')
           | kr.piatkowski@gmail.com
           .icon-container
             i.icon.ion-ios-mail
@@ -26,31 +26,3 @@
           | Linkedin
           .icon-container
             i.icon.ion-logo-linkedin
-
-  .bottom
-    .column
-      h4 HOBBIES
-      .hobbies
-        each val, index in  {1: ['musical-notes', 'Guitar'], 2:['radio-button-on', 'Squash'], 3:['book', 'Reading']}
-          .hobbie
-            .icon-container
-              i(class=`icon ion-ios-${val[0]}`)
-            = val[1]
-    .column
-      h4 FAMILY
-      .family
-        .adult
-          .icon-container
-            i.icon.ion-ios-woman
-          | Jannie
-        .child
-          .icon-container
-            i.icon.ion-ios-man
-          | Asger
-        .child
-          .icon-container
-            i.icon.ion-ios-woman
-          | Freja
-    .column
-      | test
-    

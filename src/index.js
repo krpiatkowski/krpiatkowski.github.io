@@ -7,14 +7,19 @@ import "animate.css/animate.css";
 
 import "./scss/index.scss";
 
-import inViewPort from "./js/inViewPort";
+import Pageable from "pageable"
 
-window.addEventListener("scroll", () => {
-  document.querySelectorAll(".inViewPort").forEach(el => {
-    if (inViewPort(el)) {
-      el.classList.add("animate");
-    } else {
-      el.classList.remove("animate");
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  new Pageable("#container", {
+    onFinish: (data) => {
+      let container = document.querySelector('.pg-active')
+      container.querySelectorAll('.animated').forEach(el => {
+        el.classList.remove('animated');
+        console.log(el.classList)
+        el.classList.add('animated');
+      });
     }
   });
 });

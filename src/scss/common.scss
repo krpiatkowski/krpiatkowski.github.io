@@ -2,34 +2,35 @@
 
 html {
   font-family: "Roboto Slab", serif;
-  background-color: $color4;
+  background-color: $color1;
   font-size: $fontsize;
+  color: $color4;
 }
 
 h1 {
   font-size: 2.5 * $fontsize;
   margin: 0em;
-  color: $color1;
+  color: $color4;
 }
 
 h2 {
   font-size: 2 * $fontsize;
   margin: 0em;
-  color: $color2;
+  color: $color4;
 }
 
 h3 {
   font-size: 1.5 * $fontsize;
   margin: 1em 0em;
   width: 100%;
-  border-bottom: 3px solid $color3;
+  border-bottom: 3px solid $color2;
   padding: 1em 0em;
 }
 
 h4 {
   display: inline-block;
   font-size: $fontsize;
-  border-bottom: 2px solid $color3;
+  border-bottom: 2px solid $color2;
   margin-bottom: 0.5em;
 }
 
@@ -50,8 +51,9 @@ ul {
 }
 
 .page {
-  padding: 2em 2em 2em 2em;
-  height: 100vh;
+  position: relative;
+  padding: $margin;
+  height: 100%;
 }
 
 .icon {
