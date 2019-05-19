@@ -1,0 +1,17 @@
+.flat-list {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 0 -0.3em;
+    padding: 0;
+
+    li {
+      font-weight: 300;
+      list-style-type: none;
+      background-color: $color3;
+      padding: 0.4em;
+      margin: 0.3em 0.3em 0.3em 0.3em;
+      border-radius: 3px;
+    }
+  }
+}

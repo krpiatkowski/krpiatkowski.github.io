@@ -1,0 +1,23 @@
+#skills {
+  h1 {
+    margin-bottom: 1em;
+  }
+  .columns {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+    .row {
+      display: flex;
+      flex: 1;
+      margin-bottom: 4em;
+      flex-wrap: wrap;
+
+      .column {
+        display: flex;
+        flex: 1;
+        margin-right: 1em;
+      }
+    }
+  }
+}
