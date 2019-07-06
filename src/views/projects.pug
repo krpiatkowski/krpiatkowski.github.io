@@ -1,0 +1,31 @@
+.page#projects
+  h1 PROJECTS
+  .dashed.timeline
+    .dashed-spacer
+  .timeline 
+    each project in htmlWebpackPlugin.options.data.projects
+      .container
+        .content
+          h2= project.company.toUpperCase()
+          h3= project.name.toUpperCase()
+          p!= project.description.replace("\n", "<br>")
+          .flat-list
+            ul
+              each skill in project.skills
+                li=skill
+        .timedot
+          .time=project.time
+  .dashed.timeline
+    | &nbsp;
+
+            
+
+    //- h2 Danfoss - Inhouse product
+
+    //-   | As assigned late in the projects development. 
+    //-   | After a short while, i was assigned the team lead and leading the scrum process.
+    //-   | The project      
+    //-   .flat-list
+    //-     ul
+    //-         li React
+    //-         li Nodejs

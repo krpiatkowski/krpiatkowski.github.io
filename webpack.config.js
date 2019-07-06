@@ -4,7 +4,7 @@ const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const CleanWebpackPlugin = require("clean-webpack-plugin");
 const webpack = require("webpack");
-const LiveReloadPlugin = require('webpack-livereload-plugin')
+const LiveReloadPlugin = require("webpack-livereload-plugin");
 
 module.exports = {
   entry: "./src/index.js",
@@ -77,10 +77,10 @@ module.exports = {
     }),
     new HtmlWebpackPlugin({
       template: "./src/views/index.pug",
-      filename: "./index.html"
+      filename: "./index.html",
+      data: require("./src/data.json")
     }),
-    new webpack.HotModuleReplacementPlugin(),
-
+    new webpack.HotModuleReplacementPlugin()
   ],
   resolve: {
     extensions: [".js"]
