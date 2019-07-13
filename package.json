@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development",
+    "start": "nodemon --watch data.json ./node_modules/.bin/webpack-dev-server --mode development",
     "build": "webpack --mode production",
     "deploy": "./deploy.sh"
   },
@@ -32,6 +32,7 @@
     "html-webpack-plugin": "^3.2.0",
     "json-loader": "^0.5.7",
     "mini-css-extract-plugin": "^0.6.0",
+    "nodemon": "^1.19.1",
     "node-sass": "^4.12.0",
     "postcss-loader": "^3.0.0",
     "pug": "^2.0.3",

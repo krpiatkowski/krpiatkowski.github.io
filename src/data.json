@@ -3,14 +3,14 @@
     {
       "company": "LEGO",
       "name": "Spike prime",
-      "description": "Something",
+      "description": "Team lead for one one of the team and made project configuration and assets accessible across multiple projects",
       "time": "Feb 2019 - Now",
-      "skills": ["React", "Electron"]
+      "skills": ["Typescript", "React", "Electron"]
     },
     {
       "company": "Brunata",
       "name": "Service technician app",
-      "description": "I lifting the internal team internal processes and technical skills.\nThe result was a on time and within budge app, which is the primary tool for 100s of service technicians",
+      "description": "I lifting the internal team internal processes and technical skills.\nThe result was a on time and within budge app, which is the primary tool for 100's of service technicians",
       "time": "Feb 2019 - Now",
       "skills": ["Xamarin"]
     },
@@ -20,6 +20,80 @@
       "description": "Designed and implemented a service in Azure, which enabled Brunata to move data between its clients and the cloud.\n\nThe clients needing only to implement against a very simple SDK. The project was documented and handed over to Brunata internals fast and cheaper then estimated.",
       "time": "Feb 2019 - Now",
       "skills": ["Azure cloud"]
+    },
+    {
+      "company": "Danfoss",
+      "name": "Inhouse product",
+      "description": "Functioned as scrum-master and lead developer. Got project back track by aligning project manager, designer and develop team.",
+      "skills": ["React", "Nodejs"],
+      "time": "Feb 2019 - Now"
+    },
+    {
+      "company": "Trifork",
+      "name": "Mobile developer",
+      "skills": ["iOS (Swift)", "iOS (Objective-c)", "Android"],
+      "description": "Working primary as a mobile developer on different projects, with focus on iOS",
+      "time": "Feb 2019 - Now"
+    },
+    {
+      "company": "Peopleway",
+      "name": "Impact Management",
+      "skills": ["Java", "Spring / Hibernate", "MSSQL"],
+      "description": "Implementing Peopleways software solution in a small team",
+      "time": "Feb 2019 - Now"
+    }
+  ],
+  "skills": [
+    {
+      "header": "Backend",
+      "categories": [
+        {
+          "title": "Frameworks",
+          "items": ["Spring / Hibernate", "J2EE", "Express (Node.js)", "Ruby on Rails"]
+        },
+        {
+          "title": "Databases",
+          "items": ["MSSQL Server", "MySQL", "PostGreQL", "Cassandra"]
+        },
+        {
+          "title": "Cloud",
+          "items": ["Azure", "AWS"]
+        }
+      ]
+    },
+    {
+      "header": "Frontend",
+      "categories": [
+        {
+          "title": "Web",
+          "items": ["React", "Modern JS", "HTML 5", "CSS (+ SCSS)"]
+        },
+        {
+          "title": "Mobile",
+          "items": ["iOS (Swift)", "iOS (Objective-c)", "Android", "Xamarin"]
+        },
+        {
+          "title": "",
+          "items": []
+        }
+      ]
+    },
+    {
+      "header": "Other",
+      "categories": [
+        {
+          "title": "Soft skills",
+          "items": ["Teaching", "Bread baking", "Squash"]
+        },
+        {
+          "title": "Process",
+          "items": ["Certified Scrum master", "Team leading", "Project management"]
+        },
+        {
+          "title": "Languages",
+          "items": ["Danish", "English", "Polish"]
+        }
+      ]
     }
   ]
 }

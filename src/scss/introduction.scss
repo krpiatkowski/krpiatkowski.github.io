@@ -18,8 +18,23 @@
   #headline {
     display: flex;
     flex-direction: column;
-    h2 {
+    width: 80%;
+
+    h1 {
+      font-size: 4 * $fontsize;
+      text-transform: uppercase;
+    }
+
+    .titles {
+      display: flex;
       margin-bottom: 1em;
+      h3 {
+        font-size: $fontsize;
+        margin: 0 1em 0 0;
+        padding: 0;
+        width: auto;
+        text-transform: uppercase;
+      }
     }
   }
 

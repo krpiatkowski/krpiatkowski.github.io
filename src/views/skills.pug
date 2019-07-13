@@ -1,69 +1,13 @@
 .page#skills
   h1 SKILLS
   .columns
-    h2 BACKEND
-    .row
-      .column
-        .flat-list
-          h4 FRAMEWORKS
-          ul
-            li Spring / Hibernate
-            li J2EE
-            li Express (Node.js)
-            li Ruby on Rails              
-      .column
-        .flat-list
-          h4 DATABASES
-          ul
-            li MSSQL Server
-            li MySQL
-            li PostGreQL
-            li Cassandra
-      .column
-        .flat-list
-          h4 CLOUD
-          ul
-            li Azure
-            li AWS
-    h2 FRONTEND
-    .row
-      .column
-        .flat-list
-          h4 WEB
-          ul
-            li React
-            li Modern JS
-            li HTML 5              
-            li CSS (+ SCSS)
-      .column
-        .flat-list
-          h4 MOBILE    
-          ul
-            li iOS (Swift)
-            li iOS (Objective-c)
-            li Android
-            li Xamarin
-      .column
-    h2 OTHER
-    .row
-      .column
-        .flat-list
-          h4 SOFT SKILLS    
-          ul
-            li Teaching
-            li Bread baking
-            li Squash
-      .column
-        .flat-list
-          h4 PROCESS
-          ul
-            li Certified Scrum master
-            li Team leading
-            li Project management
-      .column
-        .flat-list
-          h4 LANGUAGES
-          ul
-            li Danish
-            li English
-            li Polish
+    for skill in htmlWebpackPlugin.options.data.skills
+      h2=skill.header
+      .row
+        for category in skill.categories
+          .column
+            .flat-list
+              h4=category.title
+              ul
+                for item in category.items
+                  li=item
