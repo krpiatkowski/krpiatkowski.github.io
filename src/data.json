@@ -1,28 +1,32 @@
 {
   "projects": [
     {
-      "company": "LEGO (via Trifork)",
+      "company": "LEGO",
+      "via": "Trifork",
       "name": "Spike prime",
       "description": "Team lead for one one of the team and made project configuration and assets accessible across multiple projects",
       "time": "Feb 2019 - Now",
       "skills": ["Typescript", "React", "Electron"]
     },
     {
-      "company": "Brunata (via Trifork)",
+      "company": "Brunata",
+      "via": "Trifork",
       "name": "Service technician app",
       "description": "I lifting the internal team internal processes and technical skills.\nThe result was a on time and within budge app, which is the primary tool for 100's of service technicians",
       "time": "Feb 2018 - Feb 2019",
       "skills": ["Xamarin"]
     },
     {
-      "company": "Brunata (via Trifork)",
+      "company": "Brunata",
+      "via": "Trifork",
       "name": "B2B solution",
       "description": "Designed and implemented a service in Azure, which enabled Brunata to move data between its clients and the cloud.\n\nThe clients needing only to implement against a very simple SDK. The project was documented and handed over to Brunata internals fast and cheaper then estimated.",
       "time": "Nov 2018 - Feb 2018",
       "skills": ["Azure cloud"]
     },
     {
-      "company": "Danfoss (via Trifork)",
+      "company": "Danfoss",
+      "via": "Trifork",
       "name": "Inhouse product",
       "description": "Functioned as scrum-master and lead developer.\n\nGot project back track by aligning project manager, designer and developer team.",
       "skills": ["Typescript", "React", "Nodejs"],
