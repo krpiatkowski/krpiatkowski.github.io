@@ -4,7 +4,7 @@
     .dashed-spacer
   .timeline 
     each project in htmlWebpackPlugin.options.data.projects
-      .container
+      .container(data-aos="fade-up")
         .content
           h2= project.company
           h3= project.name

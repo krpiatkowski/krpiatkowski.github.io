@@ -45,6 +45,7 @@
     "webpack-dev-server": "^3.3.1"
   },
   "dependencies": {
+    "aos": "^2.3.4",
     "ionicons": "^4.5.6",
     "normalize.css": "^8.0.1",
     "typeface-roboto-slab": "0.0.72"
